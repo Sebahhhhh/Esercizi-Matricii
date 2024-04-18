@@ -8,12 +8,13 @@ public class Esercizio5 {
         Scanner in = new Scanner(System.in);
         int[][] m = new int[4][4];
 
-      System.out.print("Inserisci i numeri nella matrice");
-        
-        
+      
+        System.out.println("Inserisci i numeri nella matrice");
         for (int i = 0; i < m.length; i++) {
             for (int j = 0; j < m[0].length; j++) {
-                m[i][j] = in.nextInt();
+              System.out.println("Inserisci i numeri nella matrice");
+                m[i][j] = Integer.parseInt(in.nextLine());
+              
             }
         }
         trasposta(m);
